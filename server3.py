@@ -201,6 +201,7 @@ def read_params(path):
         return dict(map(lambda x: x.split('='), query))
 
 
+
 def get(req_handler, routes):
     """ Map a request to the appropriate route of a routes instance. """
     for name, handler in routes.__class__.__dict__.items():
